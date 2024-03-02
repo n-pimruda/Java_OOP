@@ -1,7 +1,4 @@
-//Lab 2: GradeBook.java 
-//GradeBook class with a constructor to initialize the course name. 
-public class GradeBook 
-{
+public class GradeBook {
   private String courseName;
   private String instructorName;
   public GradeBook( String name )  {   
