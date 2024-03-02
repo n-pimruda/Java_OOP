@@ -1,46 +1,47 @@
 package week6;
-public class Person 
-    { 
-    private String firstName; 
-    private String lastName; 
-    private int age; 
 
-    public Person( String first, String last, int years ) 
-    { 
-        firstName = first; 
-        lastName = last; 
-        if ( years < 0 ) 
-        age = years; 
-        } // end Person constructor 
+public class Person {
+    private String firstName;
+	private String lastName;
+	private int age;
 
-    public String getFirstName() 
-    { 
-        return firstName; 
-    } // end method getFirstName 
+	public Person( String first, String last, int years )
+	{
+		firstName = first;
+		lastName = last;
+		
+		if ( years > 0 )
+			age = years;
+	} 
 
-    public void setFirstName( String first ) 
-    { 
-        firstName = first; 
-    } // end method setFirstName 
+	public String getFirstName()
+	{
+		return firstName;
+	} 
 
-    public String getLastName() 
-    { 
-        return lastName; 
-    } // end method getLastName 
+	public void setFirstName( String first )
+	{
+		firstName = first;
+	} 
 
-    public void setLastName( String last ) 
-    { 
-        lastName = last; 
-    } // end method setLastName 
+	public String getLastName()
+	{
+		return lastName;
+	} 
 
-    public int getAge() 
-    { 
-        return age; 
-    } // end method getAge 
+	public void setLastName( String last )
+	{
+		lastName = last;
+	} 
 
-    public void setAge( int years ) 
-    { 
-        if ( years > 0 ) 
-    age = years; 
-    } // end method setAge 
-}   // end class Person
+	public int getAge()
+	{
+		return age;
+	} 
+
+	public void setAge( int years )
+	{
+		if ( years > 0 )
+			age = years;
+	} 
+} 
