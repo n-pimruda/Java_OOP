@@ -5,7 +5,7 @@ public class Student {
     private int score1;
     private int score2;
     private int score3;
-    private double ave ;
+    private double average ;
     
     public Student(String name ,String surname , int score1 , int score2 , int score3){
         this.name = name;
@@ -48,8 +48,8 @@ public class Student {
     }
 
     public double getAverage(){
-        ave = (score1 + score2 + score3) / 3 ;
-        return ave ;
+        average = (score1 + score2 + score3) / 3 ;
+        return average ;
     }
 
 
