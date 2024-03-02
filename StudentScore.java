@@ -3,11 +3,8 @@ public class StudentScore {
     private String name;
     private double midtermScore ; 
     private double finalScore ; 
-    // private double meanScore = (midtermScore + finalScore) * 0.5 ;
 
-
-    public StudentScore(){
-        
+    public StudentScore(){    
     }
 
     public StudentScore(String name , double midtermScore ,  double finalScore){
@@ -16,18 +13,32 @@ public class StudentScore {
         this.finalScore = finalScore ; 
     }
 
-    public double getFinalScore() {
-        return finalScore;
+    public String getName() {
+        return name;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public double getMidtermScore() {
         return midtermScore;
     }
-    public String getName(){
-        return name ;
+
+    public void setMidtermScore(double midtermScore) {
+        this.midtermScore = midtermScore;
     }
 
-    public double averageScore(){
-        return (getMidtermScore() + getFinalScore()) * 0.5 ; 
+    public double getFinalScore() {
+        return finalScore;
+    }
+
+    public void setFinalScore(double finalScore) {
+        this.finalScore = finalScore;
+    }
+
+    public double averageScore() {
+        return (midtermScore + finalScore) * 0.5 ;
     }
 
     public char grading(){
@@ -47,5 +58,4 @@ public class StudentScore {
             return 'F';
         }
     }
-
 }
